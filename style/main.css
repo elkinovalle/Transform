@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  background-color: rgb(134, 3, 3);
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+
+}
+nav ul li a{
+    position: relative;
+    display: inline-block;
+    padding: 23px 15px;
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    width: 120px;
+
+}
+nav ul li a div{
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border: solid 2px black;
+    transform: scale(1.15);
+    opacity: 0;
+    transition: all .3s linear;
+}
+nav ul li a:hover div {
+    transform: scale(1);
+    opacity: 1;
+}
+nav ul li a.active div{
+    transform: scale(1);
+    opacity: 1;
+}
+.active{
+    background-color: rgb(206, 177, 11);
+}
+nav ul li a:hover{
+    background-color: rgb(206, 177, 11);
+    transition-duration: .5s;
+    width: 120px;
+
+}
+h1{
+background-color: gray;
+text-align: center;
+height: 80px;
+padding: 40px 0 0 0;
+}
+
+/* Pagina 1 */
+
+.pagina1{
+  background-color: rgb(147, 210, 208);
+  height: 800px ;
+}
+.pagina1 article{
+  position: relative;
+  width: 500px;
+  height: 350px;
+  display: inline-block;
+  margin: 80px 0 0 100px;
+  overflow: hidden;
+}
+.pagina1 article img{
+  transform: scale(1);
+  transition: all .5s;
+}
+.pagina1 article:hover img{
+  transform: scale(1.2)
+  }
+
+.pagina1 article footer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(89, 163, 19,0.4);
+  text-align: center;
+  transform: scale(0);
+  transition: all .5s
+}
+
+.pagina1 article:hover footer{
+  transform: scale(1)
+  }
+
+.pagina1 article footer h2{
+  margin: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  transform: translateY(-300px);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .8s;
+}
+.pagina1 article:hover footer h2{
+  transform: translateY(0);
+  opacity: 1;
+}  
+.pagina1 article footer p{
+  text-align: justify;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  transform: translateY(300px);
+  display: inline-block;
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .8s;
+}
+.pagina1 article:hover footer p{
+  transform: translateY(0);
+  opacity: 1;
+} 
+.pagina1 article footer a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(206, 177, 11);
+  width:80px;
+  padding: 10px;
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .8s;
+}
+.pagina1 article:hover footer a{
+  opacity: 1;
+} 
+
+/* pagina dos */
+.pagina2{
+  background-color: black;
+  height: 800px ;
+}
+.pagina2 article{
+  position: relative;
+  width: 500px;
+  height: 350px;
+  display: inline-block;
+  margin: 80px 0 0 100px;
+  overflow: hidden;
+}
+
+
+.pagina2 article footer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(225, 128, 47,.3);
+  text-align: center;
+  transform: translate(425px,300px) rotate(90deg);
+  transition: all .5s;
+}
+
+.pagina2 article:hover footer{
+  transform: translate(0) rotate(0deg);
+  transition: all .5s;
+  }
+
+.pagina2 article footer h2{
+  margin: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  transform: translate(300px,-300px);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .8s;
+}
+.pagina2 article:hover footer h2{
+  transform: translate(0);
+  opacity: 1;
+}  
+.pagina2 article footer p{
+  text-align: justify;
+  padding: 20px ;
+  color: white;
+  font-size: 20px;
+  transform: translate(-300px,300px);
+  display: inline-block;
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .8s;
+}
+.pagina2 article:hover footer p{
+  transform: translate(0);
+  opacity: 1;
+} 
+.pagina2 article footer a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(206, 177, 11);
+  width:80px;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all .5s;
+  transition-delay: .8s;
+  display: inline-block;
+}
+.pagina2 article:hover footer a{
+  transform: translateY(0);
+  opacity: 1;
+} 
+
+/* Pagina 3           */
+
+.pagina3{
+  background-color: black;
+  height: 800px ;
+}
+.pagina3 article{
+  position: relative;
+  width: 500px;
+  height: 350px;
+  display: inline-block;
+  margin: 80px 0 0 100px;
+  overflow: hidden;
+}
+.pagina3 article img{
+  transform: scale(1) rotate(0deg);
+  transition: all .5s;
+}
+.pagina3 article:hover img{
+  transform: scale(1.2) rotate(-10deg)
+}
+.pagina3 article footer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(58, 16, 212, 0.3);
+  text-align: center;
+  transform: rotate(90deg) translate(-425px,-425px);
+  transition: all 0.5s;
+}
+
+.pagina3 article:hover footer{
+  transform: rotate(0deg) translate(0px,0px);
+ 
+  }
+
+.pagina3 article footer h2{
+  margin: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  transform: translate(-300px,-300px) rotate(-90deg);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.pagina3 article:hover footer h2{
+  transform: translate(0) rotate(0deg);
+  opacity: 1;
+}  
+.pagina3 article footer p{
+  text-align: justify;
+  padding: 20px ;
+  color: black;
+  font-size: 20px;
+  transform: translate(300px,-300px) rotate(90deg);
+  display: inline-block;
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.pagina3 article:hover footer p{
+  transform: translate(0) rotate(0);
+  opacity: 1;
+} 
+.pagina3 article footer a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color:  rgb(206, 177, 11);
+  width:80px;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(-180px);
+  transition: all .5s;
+  transition-delay: .5s;
+  display: inline-block;
+}
+.pagina3 article:hover footer a{
+  transform: translateY(0);
+  opacity: 1;
+} 
+
+
+/* Pagina 4 
+*/
+
+.pagina4{
+  background-color: black;
+  height: 800px ;
+}
+.pagina4 article{
+  position: relative;
+  width: 500px;
+  height: 350px;
+  display: inline-block;
+  margin: 80px 0 0 100px;
+  overflow: hidden;
+}
+.pagina4 article img{
+  transform: scale(1) rotate(0deg);
+  transition: all .5s;
+}
+.pagina4 article:hover img{
+  transform: scale(1.2) rotate(-10deg)
+}
+.pagina4 article footer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(52, 21, 1,.3);
+  text-align: center;
+  transform: rotate(720deg) translate(-425px,-425px);
+  transition: all 0.5s;
+}
+
+.pagina4 article:hover footer{
+  transform: rotate(0deg) translate(0px,0px);
+ 
+  }
+
+.pagina4 article footer h2{
+  margin: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  transform: translate(300px);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.pagina4 article:hover footer h2{
+  transform: translate(0);
+  opacity: 1;
+}  
+.pagina4 article footer p{
+  text-align: justify;
+  padding: 20px ;
+  color: white;
+  font-size: 20px;
+  transform: translate(-300px);
+  display: inline-block;
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.pagina4 article:hover footer p{
+  transform: translate(0) ;
+  opacity: 1;
+} 
+.pagina4 article footer a{
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  background-color:  rgb(206, 177, 11);
+  width:80px;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(180px);
+  transition: all .5s;
+  transition-delay: .5s;
+  display: inline-block;
+}
+.pagina4 article:hover footer a{
+  transform: translateY(0);
+  opacity: 1;
+} 
+
+
+/* Pagina 5 
+*/
+
+.pagina5{
+  background-color: black;
+  height: 800px ;
+}
+.pagina5 article{
+  position: relative;
+  width: 500px;
+  height: 350px;
+  display: inline-block;
+  margin: 80px 0 0 100px;
+  overflow: hidden;
+}
+
+.pagina5 article footer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(32, 114, 168, 0.3);
+  text-align: center;
+  transform:  translate(-425px,425px);
+  transition: all 0.5s;
+}
+
+.pagina5 article:hover footer{
+  transform: translate(0px,0px);
+ 
+  }
+
+.pagina5 article footer h2{
+  margin: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  transform: rotate(720deg);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.pagina5 article:hover footer h2{
+  transform: rotate(0);
+  opacity: 1;
+}  
+.pagina5 article footer p{
+  text-align: justify;
+  padding: 20px ;
+  color: black;
+  font-size: 20px;
+  transform: translate(-300px);
+  display: inline-block;
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.pagina5 article:hover footer p{
+  transform: translate(0) ;
+  opacity: 1;
+} 
+.pagina5 article footer a{
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  background-color:  rgb(206, 177, 11);
+  width:80px;
+  padding: 10px;
+  opacity: 0;
+  transform: rotate(720deg);
+  transition: all .5s;
+  transition-delay: .5s;
+  display: inline-block;
+}
+.pagina5 article:hover footer a{
+  transform: rotate(0);
+  opacity: 1;
+} 
+/* pagina 6 */
+
+
+.pagina6{
+  background-color: black;
+  height: 800px ;
+}
+.pagina6 article{
+  position: relative;
+  width: 500px;
+  height: 350px;
+  display: inline-block;
+  margin: 80px 0 0 100px;
+  overflow: hidden;
+}
+.pagina6 article img{
+  transform: scale(1) ;
+  transition: all .5s;
+}
+.pagina6 article:hover img{
+  transform: scale(2) 
+}
+.pagina6 article footer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: orangered;
+  text-align: center;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+.pagina6 article:hover footer{
+  transform: scale(1);
+ 
+  }
+
+.pagina6 article footer h2{
+  margin: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  transform: scale(0);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.pagina6 article:hover footer h2{
+  transform: scale(1);
+  opacity: 1;
+}  
+.pagina6 article footer p{
+  text-align: justify;
+  padding: 20px ;
+  color: white;
+  font-size: 20px;
+  transform: scale(0);
+  display: inline-block;
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.pagina6 article:hover footer p{
+  transform: scale(1) ;
+  opacity: 1;
+} 
+.pagina6 article footer a{
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  background-color:  rgb(206, 177, 11);
+  width:80px;
+  padding: 10px;
+  opacity: 0;
+  transform: rotate(720deg);
+  transition: all .5s;
+  transition-delay: .5s;
+  display: inline-block;
+}
+.pagina6 article:hover footer a{
+  transform: rotate(0);
+  opacity: 1;
+} 
+
